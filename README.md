@@ -1,2 +1,2 @@
-# jajalweb
-ini adalah project web pertama saya
+# restaurant-website-project
+Healthy-food-restaurant-website-project
