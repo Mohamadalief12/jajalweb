@@ -409,23 +409,28 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 300px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 .social-button {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #25d366;
   color: white;
-  padding: 50px;
-  margin: 20px;
-  border-radius: 50%;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 100px;
+  font-size: 24px;
   transition: background-color 0.3s;
+  width: auto;
+}
+.social-button span {
+  margin-right: 10px;
+}
+.social-button i {
+  font-size: 32px;
 }
 .social-button.instagram {
   background-color: #e4405f;
@@ -436,23 +441,23 @@ body {
 .social-button:hover {
   opacity: 0.8;
 }
+/* Responsive Design */
 @media (max-width: 600px) {
   .icon-container {
-    flex-direction: space-around;
+    flex-direction: column;
+    align-items: stretch;
   }
   .social-button {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    padding: 60px;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
   }
-}
-
-.form-container h2 {
-  text-align: center;
+  .social-button i {
+    font-size: 40px;
+  }
+  .social-button span {
+    margin-right: auto;
+  }
 }
 
 .form-container input {
