@@ -379,11 +379,17 @@ body {
 #contact {
   padding: 5rem 0;
   background: rgb(226, 226, 226);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #555;
 }
 
 .contact-container {
   display: flex;
-  background: #fff;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
 }
 
 .contact-img {
@@ -398,10 +404,55 @@ body {
   object-fit: cover;
 }
 
-.form-container {
-  padding: 1rem;
-  width: 50%;
-  margin: auto;
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+}
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 100px;
+  transition: background-color 0.3s;
+}
+.social-button.instagram {
+  background-color: #e4405f;
+}
+.social-button.facebook {
+  background-color: #3b5998;
+}
+.social-button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  .icon-container {
+    flex-direction: space-around;
+  }
+  .social-button {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form-container h2 {
+  text-align: center;
 }
 
 .form-container input {
@@ -576,6 +627,7 @@ body {
   }
   .form-container {
     width: 90%;
+    text-align: center;
   }
   .contact-container {
     display: flex;
