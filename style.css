@@ -110,10 +110,11 @@ body {
       rgba(240, 240, 240, 0.144),
       rgba(255, 255, 255, 0.336)
     ),
-    url("images/bg.jpg");
+    url("images/bg.jpg") no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: brightness(80%);
 }
 
 .showcase-container {
@@ -123,6 +124,11 @@ body {
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  z-index: 5;
+  color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .main-title {
